@@ -50,10 +50,4 @@ class PaymentPageViewController: UIViewController {
         balanceAccount.myBalance = balanceAccount.setNewBalance(expense: totalCost)
         self.myBalanceLb.text = "\(balanceAccount.myBalance)"
     }
-
 }
-//DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//    self.indicator.isHidden = false
-////            indicator.isAnimating = true
-//}
-//
