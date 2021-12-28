@@ -27,7 +27,6 @@ class RegistrationViewContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        print(UIScreen.main.bounds.size.width)
     }
 }
 

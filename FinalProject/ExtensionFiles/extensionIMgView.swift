@@ -55,4 +55,8 @@ extension String {
         return "\(carLogoBaseUrl)\(str).png"
     }
 }
-
+extension NSLayoutConstraint {
+    func setLeadingAndTrailingConst () {
+        self.constant = (UIScreen.main.bounds.size.width - 343) / 2
+    }
+}
