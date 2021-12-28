@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841D4D4F2774A48100A29C26 /* CarModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D4E2774A48100A29C26 /* CarModelTableViewCell.swift */; };
+		841D4D532774B78000A29C26 /* CarDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D522774B78000A29C26 /* CarDataViewController.swift */; };
+		841D4D662775BC2F00A29C26 /* CarDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D652775BC2F00A29C26 /* CarDataTableViewCell.swift */; };
+		841D4D6C2775D81A00A29C26 /* PaymentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */; };
+		841D4D742775ED9A00A29C26 /* ChoosenCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */; };
+		841D4D7D2777106C00A29C26 /* extensionIMgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D7C2777106C00A29C26 /* extensionIMgView.swift */; };
+		841D4D82277713F100A29C26 /* CarStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D81277713F100A29C26 /* CarStruct.swift */; };
+		841E97BC2777CA05009D2CAF /* CarModelVcExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */; };
+		841E97C1277871B4009D2CAF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E97C0277871B4009D2CAF /* HeaderView.swift */; };
+		841E97C4277871D2009D2CAF /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841E97C3277871D2009D2CAF /* HeaderView.xib */; };
+		8463F6372778EE820080D162 /* PaymentExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6362778EE820080D162 /* PaymentExtention.swift */; };
+		8463F63A2778EECB0080D162 /* CarDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6392778EECB0080D162 /* CarDataExtension.swift */; };
+		8463F63D2779BAC70080D162 /* SuccesseOrFailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F63C2779BAC70080D162 /* SuccesseOrFailViewController.swift */; };
+		8463F6412779E61D0080D162 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6402779E61D0080D162 /* Balance.swift */; };
+		8463F644277A02890080D162 /* RegistrationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F643277A02880080D162 /* RegistrationExtension.swift */; };
 		84DBD9B6277457B2008E66E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9B5277457B2008E66E3 /* AppDelegate.swift */; };
 		84DBD9B8277457B2008E66E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9B7277457B2008E66E3 /* SceneDelegate.swift */; };
-		84DBD9BA277457B2008E66E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9B9277457B2008E66E3 /* ViewController.swift */; };
+		84DBD9BA277457B2008E66E3 /* RegistrationViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9B9277457B2008E66E3 /* RegistrationViewContoller.swift */; };
 		84DBD9BD277457B2008E66E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DBD9BB277457B2008E66E3 /* Main.storyboard */; };
 		84DBD9BF277457C0008E66E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DBD9BE277457C0008E66E3 /* Assets.xcassets */; };
 		84DBD9C2277457C0008E66E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DBD9C0277457C0008E66E3 /* LaunchScreen.storyboard */; };
+		84DBD9CC277475E3008E66E3 /* CarModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9CB277475E3008E66E3 /* CarModelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841D4D4E2774A48100A29C26 /* CarModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelTableViewCell.swift; sourceTree = "<group>"; };
+		841D4D522774B78000A29C26 /* CarDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataViewController.swift; sourceTree = "<group>"; };
+		841D4D652775BC2F00A29C26 /* CarDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarDataTableViewCell.swift; path = FinalProject/CarDataTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentPageViewController.swift; path = FinalProject/CartVCFiles/PaymentPageViewController.swift; sourceTree = SOURCE_ROOT; };
+		841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenCarTableViewCell.swift; sourceTree = "<group>"; };
+		841D4D7C2777106C00A29C26 /* extensionIMgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionIMgView.swift; sourceTree = "<group>"; };
+		841D4D81277713F100A29C26 /* CarStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarStruct.swift; path = FinalProject/StructFile/CarStruct.swift; sourceTree = SOURCE_ROOT; };
+		841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelVcExtension.swift; sourceTree = "<group>"; };
+		841E97C0277871B4009D2CAF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		841E97C3277871D2009D2CAF /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		8463F6362778EE820080D162 /* PaymentExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentExtention.swift; sourceTree = "<group>"; };
+		8463F6392778EECB0080D162 /* CarDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataExtension.swift; sourceTree = "<group>"; };
+		8463F63C2779BAC70080D162 /* SuccesseOrFailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesseOrFailViewController.swift; sourceTree = "<group>"; };
+		8463F6402779E61D0080D162 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		8463F643277A02880080D162 /* RegistrationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationExtension.swift; sourceTree = "<group>"; };
 		84DBD9B2277457B2008E66E3 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DBD9B5277457B2008E66E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DBD9B7277457B2008E66E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84DBD9B9277457B2008E66E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DBD9B9277457B2008E66E3 /* RegistrationViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewContoller.swift; sourceTree = "<group>"; };
 		84DBD9BC277457B2008E66E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84DBD9BE277457C0008E66E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DBD9C1277457C0008E66E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DBD9C3277457C0008E66E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DBD9CB277475E3008E66E3 /* CarModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +69,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841D4D582774BD7B00A29C26 /* CarDataVCFiles */ = {
+			isa = PBXGroup;
+			children = (
+				841D4D522774B78000A29C26 /* CarDataViewController.swift */,
+				8463F6392778EECB0080D162 /* CarDataExtension.swift */,
+				841D4D652775BC2F00A29C26 /* CarDataTableViewCell.swift */,
+			);
+			path = CarDataVCFiles;
+			sourceTree = "<group>";
+		};
+		841D4D592774BDAC00A29C26 /* CarModelVcFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84DBD9CB277475E3008E66E3 /* CarModelVC.swift */,
+				841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */,
+				841D4D4E2774A48100A29C26 /* CarModelTableViewCell.swift */,
+			);
+			path = CarModelVcFiles;
+			sourceTree = "<group>";
+		};
+		841D4D5A2774BDD100A29C26 /* RegistrationVcFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84DBD9B9277457B2008E66E3 /* RegistrationViewContoller.swift */,
+				8463F643277A02880080D162 /* RegistrationExtension.swift */,
+			);
+			path = RegistrationVcFiles;
+			sourceTree = "<group>";
+		};
+		841D4D6F2775D82300A29C26 /* CartVCFiles */ = {
+			isa = PBXGroup;
+			children = (
+				841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */,
+				8463F6402779E61D0080D162 /* Balance.swift */,
+				8463F6362778EE820080D162 /* PaymentExtention.swift */,
+				841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */,
+			);
+			path = CartVCFiles;
+			sourceTree = "<group>";
+		};
+		841D4D7F277712EE00A29C26 /* StructFile */ = {
+			isa = PBXGroup;
+			children = (
+				841D4D81277713F100A29C26 /* CarStruct.swift */,
+			);
+			path = StructFile;
+			sourceTree = "<group>";
+		};
+		841D4D802777136500A29C26 /* ExtensionFiles */ = {
+			isa = PBXGroup;
+			children = (
+				841D4D7C2777106C00A29C26 /* extensionIMgView.swift */,
+			);
+			path = ExtensionFiles;
+			sourceTree = "<group>";
+		};
+		841E97BF27787154009D2CAF /* CustomViewForHeader */ = {
+			isa = PBXGroup;
+			children = (
+				841E97C0277871B4009D2CAF /* HeaderView.swift */,
+				841E97C3277871D2009D2CAF /* HeaderView.xib */,
+			);
+			path = CustomViewForHeader;
+			sourceTree = "<group>";
+		};
+		8463F646277A0C6E0080D162 /* SuccesseOrFailVcFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8463F63C2779BAC70080D162 /* SuccesseOrFailViewController.swift */,
+			);
+			path = SuccesseOrFailVcFiles;
+			sourceTree = "<group>";
+		};
 		84DBD9A9277457B2008E66E3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +161,16 @@
 		84DBD9B4277457B2008E66E3 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				841D4D5A2774BDD100A29C26 /* RegistrationVcFiles */,
+				841D4D592774BDAC00A29C26 /* CarModelVcFiles */,
+				841D4D582774BD7B00A29C26 /* CarDataVCFiles */,
+				841D4D6F2775D82300A29C26 /* CartVCFiles */,
+				8463F646277A0C6E0080D162 /* SuccesseOrFailVcFiles */,
+				841D4D7F277712EE00A29C26 /* StructFile */,
+				841E97BF27787154009D2CAF /* CustomViewForHeader */,
+				841D4D802777136500A29C26 /* ExtensionFiles */,
 				84DBD9B5277457B2008E66E3 /* AppDelegate.swift */,
 				84DBD9B7277457B2008E66E3 /* SceneDelegate.swift */,
-				84DBD9B9277457B2008E66E3 /* ViewController.swift */,
 				84DBD9BB277457B2008E66E3 /* Main.storyboard */,
 				84DBD9BE277457C0008E66E3 /* Assets.xcassets */,
 				84DBD9C0277457C0008E66E3 /* LaunchScreen.storyboard */,
@@ -127,6 +239,7 @@
 				84DBD9C2277457C0008E66E3 /* LaunchScreen.storyboard in Resources */,
 				84DBD9BF277457C0008E66E3 /* Assets.xcassets in Resources */,
 				84DBD9BD277457B2008E66E3 /* Main.storyboard in Resources */,
+				841E97C4277871D2009D2CAF /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +250,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DBD9BA277457B2008E66E3 /* ViewController.swift in Sources */,
+				841D4D4F2774A48100A29C26 /* CarModelTableViewCell.swift in Sources */,
+				841E97BC2777CA05009D2CAF /* CarModelVcExtension.swift in Sources */,
+				84DBD9BA277457B2008E66E3 /* RegistrationViewContoller.swift in Sources */,
+				8463F63D2779BAC70080D162 /* SuccesseOrFailViewController.swift in Sources */,
 				84DBD9B6277457B2008E66E3 /* AppDelegate.swift in Sources */,
+				841D4D742775ED9A00A29C26 /* ChoosenCarTableViewCell.swift in Sources */,
+				8463F63A2778EECB0080D162 /* CarDataExtension.swift in Sources */,
+				84DBD9CC277475E3008E66E3 /* CarModelVC.swift in Sources */,
+				8463F644277A02890080D162 /* RegistrationExtension.swift in Sources */,
+				841D4D82277713F100A29C26 /* CarStruct.swift in Sources */,
+				841D4D6C2775D81A00A29C26 /* PaymentPageViewController.swift in Sources */,
+				841D4D7D2777106C00A29C26 /* extensionIMgView.swift in Sources */,
+				8463F6412779E61D0080D162 /* Balance.swift in Sources */,
+				8463F6372778EE820080D162 /* PaymentExtention.swift in Sources */,
 				84DBD9B8277457B2008E66E3 /* SceneDelegate.swift in Sources */,
+				841D4D532774B78000A29C26 /* CarDataViewController.swift in Sources */,
+				841D4D662775BC2F00A29C26 /* CarDataTableViewCell.swift in Sources */,
+				841E97C1277871B4009D2CAF /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mirian-maglakelidze.FinalProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mirian-maglakelidze.FinalProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
