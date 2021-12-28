@@ -991,7 +991,7 @@
                                     <outlet property="delegate" destination="GZk-VW-cwS" id="hn0-LO-7t7"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-qK-FWt">
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-qK-FWt">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <color key="color" red="0.14000000000000001" green="0.13" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>

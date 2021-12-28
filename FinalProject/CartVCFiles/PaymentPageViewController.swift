@@ -2,11 +2,7 @@ import UIKit
 class PaymentPageViewController: UIViewController {
     var selectedCars: [CarModel]!
     
-    @IBOutlet weak var indicator: UIActivityIndicatorView!{
-        didSet {
-            indicator.isHidden = true
-        }
-    }
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     var carMakerStr: [String]!
     var dictionaryOfCars = [Int:[CarModel]]()
     var balanceAccount = Balance()
