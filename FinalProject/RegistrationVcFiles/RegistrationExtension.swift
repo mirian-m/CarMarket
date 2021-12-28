@@ -9,7 +9,9 @@ extension RegistrationViewContoller {
         }
         if  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarModelVC") as? CarModelVC {
             self.navigationController?.pushViewController(vc, animated: true)
+            
         }
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     func isValidEmail(email: String?) -> Bool {

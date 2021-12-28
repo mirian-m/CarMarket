@@ -12,12 +12,11 @@ class CarDataViewController: UIViewController {
     @IBOutlet weak var trailingConst: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        leadingConst.setLeadingAndTrailingConst()
-        trailingConst.setLeadingAndTrailingConst()
 
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = false
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)

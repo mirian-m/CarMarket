@@ -42,12 +42,16 @@ class PaymentPageViewController: UIViewController {
         super.viewDidLoad()
         carMakerStr = setCarMakerArr()
         fillDictionaryOfCars()
-        tableViewLeadingConst.setLeadingAndTrailingConst()
-        tableViewTreinigConst.setLeadingAndTrailingConst()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         balanceAccount.myBalance = balanceAccount.setNewBalance(expense: totalCost)
         self.myBalanceLb.text = "\(balanceAccount.myBalance)"
+
     }
 }

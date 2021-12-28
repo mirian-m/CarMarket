@@ -15,14 +15,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jOt-vd-MhI">
-                    <rect key="frame" x="0.0" y="57.5" width="19" height="18"/>
+                    <rect key="frame" x="16" y="57.5" width="19" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="kxX-cm-ual"/>
                         <constraint firstAttribute="width" constant="19" id="qic-qu-AFj"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="21" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1e-ce-KFU">
-                    <rect key="frame" x="24" y="56" width="42" height="21"/>
+                    <rect key="frame" x="40" y="56" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -32,7 +32,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="o1e-ce-KFU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1HK-BI-kDg"/>
-                <constraint firstItem="jOt-vd-MhI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="66m-T1-EXe"/>
+                <constraint firstItem="jOt-vd-MhI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="66m-T1-EXe"/>
                 <constraint firstItem="jOt-vd-MhI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pl1-d0-I4X"/>
                 <constraint firstItem="o1e-ce-KFU" firstAttribute="leading" secondItem="jOt-vd-MhI" secondAttribute="trailing" constant="5" id="QU9-yL-eUd"/>
             </constraints>

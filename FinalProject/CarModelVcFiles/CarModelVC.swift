@@ -31,14 +31,12 @@ class CarModelVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getDataFromWeb()
-        tableViewLeadingConst.setLeadingAndTrailingConst()
-        tableViewTrailinconst.setLeadingAndTrailingConst()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.totalSelected.text = "\(selectedCarQuantity)x"
         self.totalCostLb.text = "\(totalPrice)$"
-
+        self.navigationController?.navigationBar.isHidden = true
 
     }
 }

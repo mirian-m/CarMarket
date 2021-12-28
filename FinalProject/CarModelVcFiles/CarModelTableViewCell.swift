@@ -1,7 +1,7 @@
 import UIKit
 
 class CarModelTableViewCell: UITableViewCell {
-    @IBOutlet weak var carModelCell: CarModelTableViewCell!
+    @IBOutlet weak var carModelCell: UIView!
     
     @IBOutlet weak var view: UIView! {
         didSet {

@@ -3,7 +3,7 @@ import UIKit
 class CarDataTableViewCell: UITableViewCell {
     
     weak var delegate : CarDataViewControllerDelegate!
-    @IBOutlet weak var carDataCell: CarDataTableViewCell!
+    @IBOutlet weak var carDataCell: UIView!
     
     @IBOutlet weak var carView: UIView!{
         didSet {
@@ -30,8 +30,7 @@ class CarDataTableViewCell: UITableViewCell {
     @IBAction func minusBt(_ sender: UIButton) {
         delegate.removeCar(cell: self)
     }
-    
-    
+
     @IBAction func plusBtn(_ sender: UIButton) {
         delegate.addCar(cell: self)
     }

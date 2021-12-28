@@ -27,6 +27,7 @@ class RegistrationViewContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.navigationController?.navigationBar.isHidden = true
     }
 }
 

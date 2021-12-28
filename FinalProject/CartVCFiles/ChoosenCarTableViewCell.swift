@@ -2,7 +2,7 @@ import UIKit
 
 class ChoosenCarTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var choosenCarCell: ChoosenCarTableViewCell!
+    @IBOutlet weak var choosenCarCell: UIView!
     
     @IBOutlet weak var carImage: UIImageView!{
         didSet {
@@ -21,5 +21,4 @@ class ChoosenCarTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
 }

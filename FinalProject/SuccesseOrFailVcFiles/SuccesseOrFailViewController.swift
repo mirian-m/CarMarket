@@ -1,7 +1,6 @@
 import UIKit
 class SuccesseOrFailViewController: UIViewController {
     private var isSucsses: Bool!
-    
     @IBOutlet weak var okFailImg: UIImageView!
     @IBOutlet weak var textLb: UILabel!
     @IBOutlet weak var getBackBt: UIButton!{
@@ -26,6 +25,7 @@ class SuccesseOrFailViewController: UIViewController {
     func navigate(navControler: UINavigationController, isSucsses: Bool){
         self.modalPresentationStyle = .fullScreen
         navControler.present(self, animated: true, completion: nil)
+        
         self.isSucsses = isSucsses
     }
     @IBAction func getBackBtAction(_ sender: UIButton) {
