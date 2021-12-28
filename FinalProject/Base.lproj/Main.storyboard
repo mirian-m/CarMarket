@@ -991,13 +991,19 @@
                                     <outlet property="delegate" destination="GZk-VW-cwS" id="hn0-LO-7t7"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-qK-FWt">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.14000000000000001" green="0.13" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i6s-TQ-26t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LF4-qK-FWt" firstAttribute="centerX" secondItem="D8s-3f-6Uf" secondAttribute="centerX" id="5ko-Gh-k88"/>
                             <constraint firstItem="tHI-3w-zOj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i6s-TQ-26t" secondAttribute="leading" symbolic="YES" id="7K8-NW-osY"/>
                             <constraint firstItem="3Yi-7J-p3u" firstAttribute="leading" secondItem="i6s-TQ-26t" secondAttribute="leading" constant="16" id="8s5-yy-of6"/>
                             <constraint firstItem="Wbq-gg-Zj2" firstAttribute="leading" secondItem="i6s-TQ-26t" secondAttribute="leading" id="Dm0-dr-jHt"/>
+                            <constraint firstItem="LF4-qK-FWt" firstAttribute="centerY" secondItem="D8s-3f-6Uf" secondAttribute="centerY" id="G9D-qF-BXN"/>
                             <constraint firstItem="tHI-3w-zOj" firstAttribute="trailing" secondItem="3Yi-7J-p3u" secondAttribute="trailing" id="GhH-hF-y9x"/>
                             <constraint firstItem="tHI-3w-zOj" firstAttribute="top" secondItem="i6s-TQ-26t" secondAttribute="top" id="HD7-Wi-jWy"/>
                             <constraint firstItem="Wbq-gg-Zj2" firstAttribute="top" secondItem="3Yi-7J-p3u" secondAttribute="bottom" priority="250" constant="140" id="Vre-uF-qgQ"/>
@@ -1010,6 +1016,7 @@
                     </view>
                     <connections>
                         <outlet property="comissionLb" destination="ZiH-bS-WxN" id="zvT-KE-sbc"/>
+                        <outlet property="indicator" destination="LF4-qK-FWt" id="Aiv-Ea-VZM"/>
                         <outlet property="myBalanceLb" destination="U7T-ib-IKB" id="bJQ-y8-ZkX"/>
                         <outlet property="payBt" destination="WYj-DU-XnL" id="HTd-Ht-nEO"/>
                         <outlet property="totalPriceLB" destination="R1m-sW-cHl" id="ZHb-yz-e1c"/>

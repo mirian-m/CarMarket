@@ -3,7 +3,12 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
     @IBAction func payBtAction(_ sender: UIButton) {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "SuccesseOrFailViewController") as?
             SuccesseOrFailViewController {
-            vc.navigate(navControler: self.navigationController!, isSucsses: balanceAccount.myBalance > totalCost)
+            self.indicator.isHidden = false
+            self.indicator.startAnimating()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [self] in
+                self.indicator.stopAnimating()
+                vc.navigate(navControler: self.navigationController!, isSucsses: balanceAccount.myBalance > totalCost)
+            }
         }
     }
     @IBAction func topUpBalanceBtAction(_ sender: UIButton) {

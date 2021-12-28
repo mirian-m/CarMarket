@@ -109,13 +109,6 @@
 			path = CartVCFiles;
 			sourceTree = "<group>";
 		};
-		841D4D7F277712EE00A29C26 /* StructFile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StructFile;
-			sourceTree = "<group>";
-		};
 		841D4D802777136500A29C26 /* ExtensionFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +159,6 @@
 				841D4D582774BD7B00A29C26 /* CarDataVCFiles */,
 				841D4D6F2775D82300A29C26 /* CartVCFiles */,
 				8463F646277A0C6E0080D162 /* SuccesseOrFailVcFiles */,
-				841D4D7F277712EE00A29C26 /* StructFile */,
 				841E97BF27787154009D2CAF /* CustomViewForHeader */,
 				841D4D802777136500A29C26 /* ExtensionFiles */,
 				84DBD9B5277457B2008E66E3 /* AppDelegate.swift */,
