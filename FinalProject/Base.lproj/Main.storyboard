@@ -1023,6 +1023,8 @@
                         <outlet property="indicator" destination="LF4-qK-FWt" id="Aiv-Ea-VZM"/>
                         <outlet property="myBalanceLb" destination="U7T-ib-IKB" id="bJQ-y8-ZkX"/>
                         <outlet property="payBt" destination="WYj-DU-XnL" id="HTd-Ht-nEO"/>
+                        <outlet property="tableViewLeadingConst" destination="8s5-yy-of6" id="yI0-mj-rCP"/>
+                        <outlet property="tableViewTreinigConst" destination="8s5-yy-of6" id="DP4-Th-cte"/>
                         <outlet property="totalPriceLB" destination="R1m-sW-cHl" id="ZHb-yz-e1c"/>
                     </connections>
                 </viewController>

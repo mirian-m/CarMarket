@@ -15,6 +15,8 @@ class PaymentPageViewController: UIViewController {
             return sum
         }
     }
+    @IBOutlet weak var tableViewLeadingConst: NSLayoutConstraint!
+    @IBOutlet weak var tableViewTreinigConst: NSLayoutConstraint!
     @IBOutlet weak var totalPriceLB: UILabel!{
         didSet {
             totalPriceLB.text = "\(totalCost + 50)$"
@@ -40,6 +42,8 @@ class PaymentPageViewController: UIViewController {
         super.viewDidLoad()
         carMakerStr = setCarMakerArr()
         fillDictionaryOfCars()
+        tableViewLeadingConst.setLeadingAndTrailingConst()
+        tableViewTreinigConst.setLeadingAndTrailingConst()
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
