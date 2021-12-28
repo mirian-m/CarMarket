@@ -38,7 +38,7 @@
 		841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentPageViewController.swift; path = FinalProject/CartVCFiles/PaymentPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenCarTableViewCell.swift; sourceTree = "<group>"; };
 		841D4D7C2777106C00A29C26 /* extensionIMgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionIMgView.swift; sourceTree = "<group>"; };
-		841D4D81277713F100A29C26 /* CarStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarStruct.swift; path = FinalProject/StructFile/CarStruct.swift; sourceTree = SOURCE_ROOT; };
+		841D4D81277713F100A29C26 /* CarStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarStruct.swift; path = FinalProject/CarStruct.swift; sourceTree = SOURCE_ROOT; };
 		841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelVcExtension.swift; sourceTree = "<group>"; };
 		841E97C0277871B4009D2CAF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		841E97C3277871D2009D2CAF /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 		841D4D7F277712EE00A29C26 /* StructFile */ = {
 			isa = PBXGroup;
 			children = (
-				841D4D81277713F100A29C26 /* CarStruct.swift */,
 			);
 			path = StructFile;
 			sourceTree = "<group>";
@@ -161,6 +160,7 @@
 		84DBD9B4277457B2008E66E3 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				841D4D81277713F100A29C26 /* CarStruct.swift */,
 				841D4D5A2774BDD100A29C26 /* RegistrationVcFiles */,
 				841D4D592774BDAC00A29C26 /* CarModelVcFiles */,
 				841D4D582774BD7B00A29C26 /* CarDataVCFiles */,
