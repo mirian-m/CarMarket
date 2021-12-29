@@ -1,5 +1,6 @@
 import UIKit
 extension RegistrationViewContoller {
+    
     @IBAction func enterBtnAction(_ sender: UIButton) {
         if !isValidEmail(email: eMail.text) {
             emeilAlert()

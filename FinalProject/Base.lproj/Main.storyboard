@@ -57,13 +57,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-I5-VTq">
                                 <rect key="frame" x="20" y="446.33333333333326" width="374" height="415.66666666666674"/>
                                 <subviews>
-                                    <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ელ-ფოსტა" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9ZT-KB-WHg">
+                                    <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ელ-ფოსტა" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9ZT-KB-WHg">
                                         <rect key="frame" x="16" y="0.0" width="342" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="jdA-8R-Iqj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <connections>
+                                            <action selector="emailTextFild:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="BEv-Vb-FtK"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="პაროლი" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cIs-ny-cPZ">
                                         <rect key="frame" x="16" y="77.000000000000057" width="342" height="57"/>

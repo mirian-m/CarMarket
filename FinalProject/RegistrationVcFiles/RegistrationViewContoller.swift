@@ -29,5 +29,11 @@ class RegistrationViewContoller: UIViewController {
         self.hideKeyboardWhenTappedAround()
         self.navigationController?.navigationBar.isHidden = true
     }
+    
+    @IBAction func emailTextFild(_ sender: UITextField) {
+        if sender.text == "ელ-ფოსტა" {
+            sender.text = ""
+        }
+    }
 }
 
