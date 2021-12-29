@@ -1,5 +1,5 @@
 import UIKit
-extension CarModelVC :  UITableViewDelegate, UITableViewDataSource{
+extension CarMakeVC :  UITableViewDelegate, UITableViewDataSource{
 
     @IBAction func moveToBag(_ sender: UIButton) {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentPageViewController") as? PaymentPageViewController {
@@ -34,12 +34,12 @@ extension CarModelVC :  UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CarModelTableViewCell", for: indexPath) as! CarModelTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CarModelTableViewCell", for: indexPath) as! CarMakeTableViewCell
         cell.selectionStyle = .none
         let indexOfSet = carMake.index(carMake.startIndex, offsetBy: indexPath.row)
-        cell.modelNameLb.text = carMake[indexOfSet].capitalizingFirstLetter()
+        cell.makeNameLb.text = carMake[indexOfSet].capitalizingFirstLetter()
         let logoUrl = ""
-        cell.modelIconImg.imgFromServerURL(urlString: logoUrl.urlStringGenerator(str: carMake[indexOfSet]))
+        cell.makeIconImg.imgFromServerURL(urlString: logoUrl.urlStringGenerator(str: carMake[indexOfSet]))
         return cell
     }
     
@@ -49,8 +49,8 @@ extension CarModelVC :  UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: index!) as! CarModelTableViewCell
-        let carMake = currentCell.modelNameLb.text!.lowercasedFirstLetter()
+        let currentCell = tableView.cellForRow(at: index!) as! CarMakeTableViewCell
+        let carMake = currentCell.makeNameLb.text!.lowercasedFirstLetter()
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CarDataViewController") as? CarDataViewController {
             vc.selectedCarArray = getItemsFromArrayByIdentifier(strIdentifier: carMake)
             self.navigationController?.pushViewController(vc, animated: true)

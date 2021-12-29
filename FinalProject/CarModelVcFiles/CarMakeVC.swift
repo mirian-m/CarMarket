@@ -1,5 +1,5 @@
 import UIKit
-class CarModelVC: UIViewController {
+class CarMakeVC: UIViewController {
     var carsArray = [CarModel]()
     var carMake = Set<String>()
     

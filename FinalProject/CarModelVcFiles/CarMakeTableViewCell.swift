@@ -1,16 +1,15 @@
 import UIKit
 
-class CarModelTableViewCell: UITableViewCell {
-    @IBOutlet weak var carModelCell: UIView!
-    
+class CarMakeTableViewCell: UITableViewCell {
+    @IBOutlet weak var carMakeCell: UIView!
     @IBOutlet weak var view: UIView! {
         didSet {
             view.setViewDesign()
         }
     }
-    @IBOutlet weak var modelIconImg: UIImageView!
+    @IBOutlet weak var makeIconImg: UIImageView!
     
-    @IBOutlet weak var modelNameLb: UILabel!
+    @IBOutlet weak var makeNameLb: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

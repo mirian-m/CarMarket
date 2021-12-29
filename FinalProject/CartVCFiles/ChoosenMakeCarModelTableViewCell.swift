@@ -1,6 +1,6 @@
 import UIKit
 
-class ChoosenCarTableViewCell: UITableViewCell {
+class ChoosenMakeCarModelTableViewCell: UITableViewCell {
 
     @IBOutlet weak var choosenCarCell: UIView!
     

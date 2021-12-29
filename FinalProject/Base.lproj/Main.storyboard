@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="103.79464285714285"/>
         </scene>
-        <!--Car ModelVC-->
+        <!--Car MakeVC-->
         <scene sceneID="ICx-vc-rnp">
             <objects>
-                <viewController storyboardIdentifier="CarModelVC" automaticallyAdjustsScrollViewInsets="NO" id="zpe-e4-I88" customClass="CarModelVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarModelVC" automaticallyAdjustsScrollViewInsets="NO" id="zpe-e4-I88" customClass="CarMakeVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="5ud-5i-LhQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="height" constant="173" id="ppf-2j-8Dw"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarModelTableViewCell" rowHeight="129" id="uET-2Z-FZj" customClass="CarModelTableViewCell" customModule="FinalProject" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarModelTableViewCell" rowHeight="129" id="uET-2Z-FZj" customClass="CarMakeTableViewCell" customModule="FinalProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="381" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uET-2Z-FZj" id="LXm-vK-al4">
@@ -238,9 +238,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="carModelCell" destination="LXm-vK-al4" id="jsJ-Ia-sxf"/>
-                                            <outlet property="modelIconImg" destination="3dK-0X-PKK" id="FZc-85-yqt"/>
-                                            <outlet property="modelNameLb" destination="pzq-1s-s2D" id="cyq-a9-0Ys"/>
+                                            <outlet property="carMakeCell" destination="LXm-vK-al4" id="jsJ-Ia-sxf"/>
+                                            <outlet property="makeIconImg" destination="3dK-0X-PKK" id="FZc-85-yqt"/>
+                                            <outlet property="makeNameLb" destination="pzq-1s-s2D" id="cyq-a9-0Ys"/>
                                             <outlet property="view" destination="kvH-wq-ceW" id="MFK-yW-HpQ"/>
                                         </connections>
                                     </tableViewCell>
@@ -847,7 +847,7 @@
                                 <color key="separatorColor" systemColor="linkColor"/>
                                 <inset key="separatorInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChoosenCarTableViewCell" rowHeight="262" id="VRw-aW-evU" customClass="ChoosenCarTableViewCell" customModule="FinalProject" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChoosenCarTableViewCell" rowHeight="262" id="VRw-aW-evU" customClass="ChoosenMakeCarModelTableViewCell" customModule="FinalProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="382" height="262"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRw-aW-evU" id="wYg-AL-y10">

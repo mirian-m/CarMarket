@@ -50,7 +50,7 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ChoosenCarTableViewCell", for: indexPath) as! ChoosenCarTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChoosenCarTableViewCell", for: indexPath) as! ChoosenMakeCarModelTableViewCell
         cell.selectionStyle = .none
         let carsFromManufacturer = dictionaryOfCars[indexPath.section]
         let currentCar = carsFromManufacturer![indexPath.row]

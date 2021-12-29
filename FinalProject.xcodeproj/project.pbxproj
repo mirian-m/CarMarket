@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841D4D4F2774A48100A29C26 /* CarModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D4E2774A48100A29C26 /* CarModelTableViewCell.swift */; };
+		841D4D4F2774A48100A29C26 /* CarMakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D4E2774A48100A29C26 /* CarMakeTableViewCell.swift */; };
 		841D4D532774B78000A29C26 /* CarDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D522774B78000A29C26 /* CarDataViewController.swift */; };
 		841D4D662775BC2F00A29C26 /* CarDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D652775BC2F00A29C26 /* CarDataTableViewCell.swift */; };
 		841D4D6C2775D81A00A29C26 /* PaymentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */; };
-		841D4D742775ED9A00A29C26 /* ChoosenCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */; };
+		841D4D742775ED9A00A29C26 /* ChoosenMakeCarModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D732775ED9A00A29C26 /* ChoosenMakeCarModelTableViewCell.swift */; };
 		841D4D7D2777106C00A29C26 /* extensionIMgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D7C2777106C00A29C26 /* extensionIMgView.swift */; };
 		841D4D82277713F100A29C26 /* CarStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4D81277713F100A29C26 /* CarStruct.swift */; };
 		841E97BC2777CA05009D2CAF /* CarModelVcExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */; };
@@ -28,15 +28,15 @@
 		84DBD9BD277457B2008E66E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DBD9BB277457B2008E66E3 /* Main.storyboard */; };
 		84DBD9BF277457C0008E66E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DBD9BE277457C0008E66E3 /* Assets.xcassets */; };
 		84DBD9C2277457C0008E66E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DBD9C0277457C0008E66E3 /* LaunchScreen.storyboard */; };
-		84DBD9CC277475E3008E66E3 /* CarModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9CB277475E3008E66E3 /* CarModelVC.swift */; };
+		84DBD9CC277475E3008E66E3 /* CarMakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD9CB277475E3008E66E3 /* CarMakeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		841D4D4E2774A48100A29C26 /* CarModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelTableViewCell.swift; sourceTree = "<group>"; };
+		841D4D4E2774A48100A29C26 /* CarMakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMakeTableViewCell.swift; sourceTree = "<group>"; };
 		841D4D522774B78000A29C26 /* CarDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataViewController.swift; sourceTree = "<group>"; };
 		841D4D652775BC2F00A29C26 /* CarDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarDataTableViewCell.swift; path = FinalProject/CarDataTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentPageViewController.swift; path = FinalProject/CartVCFiles/PaymentPageViewController.swift; sourceTree = SOURCE_ROOT; };
-		841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenCarTableViewCell.swift; sourceTree = "<group>"; };
+		841D4D732775ED9A00A29C26 /* ChoosenMakeCarModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenMakeCarModelTableViewCell.swift; sourceTree = "<group>"; };
 		841D4D7C2777106C00A29C26 /* extensionIMgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionIMgView.swift; sourceTree = "<group>"; };
 		841D4D81277713F100A29C26 /* CarStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarStruct.swift; path = FinalProject/CarStruct.swift; sourceTree = SOURCE_ROOT; };
 		841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelVcExtension.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		84DBD9BE277457C0008E66E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DBD9C1277457C0008E66E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DBD9C3277457C0008E66E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84DBD9CB277475E3008E66E3 /* CarModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelVC.swift; sourceTree = "<group>"; };
+		84DBD9CB277475E3008E66E3 /* CarMakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMakeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +82,9 @@
 		841D4D592774BDAC00A29C26 /* CarModelVcFiles */ = {
 			isa = PBXGroup;
 			children = (
-				84DBD9CB277475E3008E66E3 /* CarModelVC.swift */,
+				84DBD9CB277475E3008E66E3 /* CarMakeVC.swift */,
 				841E97BB2777CA05009D2CAF /* CarModelVcExtension.swift */,
-				841D4D4E2774A48100A29C26 /* CarModelTableViewCell.swift */,
+				841D4D4E2774A48100A29C26 /* CarMakeTableViewCell.swift */,
 			);
 			path = CarModelVcFiles;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 				841D4D6B2775D81A00A29C26 /* PaymentPageViewController.swift */,
 				8463F6402779E61D0080D162 /* Balance.swift */,
 				8463F6362778EE820080D162 /* PaymentExtention.swift */,
-				841D4D732775ED9A00A29C26 /* ChoosenCarTableViewCell.swift */,
+				841D4D732775ED9A00A29C26 /* ChoosenMakeCarModelTableViewCell.swift */,
 			);
 			path = CartVCFiles;
 			sourceTree = "<group>";
@@ -242,14 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841D4D4F2774A48100A29C26 /* CarModelTableViewCell.swift in Sources */,
+				841D4D4F2774A48100A29C26 /* CarMakeTableViewCell.swift in Sources */,
 				841E97BC2777CA05009D2CAF /* CarModelVcExtension.swift in Sources */,
 				84DBD9BA277457B2008E66E3 /* RegistrationViewContoller.swift in Sources */,
 				8463F63D2779BAC70080D162 /* SuccesseOrFailViewController.swift in Sources */,
 				84DBD9B6277457B2008E66E3 /* AppDelegate.swift in Sources */,
-				841D4D742775ED9A00A29C26 /* ChoosenCarTableViewCell.swift in Sources */,
+				841D4D742775ED9A00A29C26 /* ChoosenMakeCarModelTableViewCell.swift in Sources */,
 				8463F63A2778EECB0080D162 /* CarDataExtension.swift in Sources */,
-				84DBD9CC277475E3008E66E3 /* CarModelVC.swift in Sources */,
+				84DBD9CC277475E3008E66E3 /* CarMakeVC.swift in Sources */,
 				8463F644277A02890080D162 /* RegistrationExtension.swift in Sources */,
 				841D4D82277713F100A29C26 /* CarStruct.swift in Sources */,
 				841D4D6C2775D81A00A29C26 /* PaymentPageViewController.swift in Sources */,

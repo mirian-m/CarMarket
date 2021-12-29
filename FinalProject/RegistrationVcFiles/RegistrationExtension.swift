@@ -7,11 +7,10 @@ extension RegistrationViewContoller {
         if !isValidPassword(password: password.text) {
             passwordAlert()
         }
-        if  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarModelVC") as? CarModelVC {
+        if  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarModelVC") as? CarMakeVC {
             self.navigationController?.pushViewController(vc, animated: true)
             
         }
-        self.navigationController?.navigationBar.isHidden = true
     }
     
     func isValidEmail(email: String?) -> Bool {

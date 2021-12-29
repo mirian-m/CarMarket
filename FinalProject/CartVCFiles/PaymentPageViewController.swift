@@ -33,7 +33,8 @@ class PaymentPageViewController: UIViewController {
     }
     @IBOutlet weak var comissionLb: UILabel! {
         didSet {
-            comissionLb.text = "\(Double(totalCost) * 0.05)$"
+            let comission = round(Double(totalCost) * 0.05)
+            comissionLb.text = "\(comission)$"
         }
     }
     @IBOutlet weak var payBt: UIButton!{
