@@ -1,8 +1,6 @@
 import UIKit
 class PaymentPageViewController: UIViewController {
     var selectedCars: [CarModel]!
-    
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
     var carMakerStr: [String]!
     var dictionaryOfCars = [Int:[CarModel]]()
     var balanceAccount = Balance()
@@ -15,8 +13,19 @@ class PaymentPageViewController: UIViewController {
             return sum
         }
     }
-    @IBOutlet weak var tableViewLeadingConst: NSLayoutConstraint!
-    @IBOutlet weak var tableViewTreinigConst: NSLayoutConstraint!
+    @IBOutlet weak var balaceView: UIView! {
+        didSet {
+            balaceView.setViewDesign()
+        }
+    }
+    @IBOutlet weak var btForFillBalance: UIButton!
+    @IBOutlet weak var balaceIcon: UIImageView! {
+        didSet {
+            balaceIcon.setImgViewDesign()
+        }
+    }
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var totalPriceLB: UILabel!{
         didSet {
             totalPriceLB.text = "\(totalCost + 50)$"

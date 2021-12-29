@@ -62,6 +62,6 @@ extension CarDataViewController: UITableViewDelegate, UITableViewDataSource,CarD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        160
+        149
     }
 }
