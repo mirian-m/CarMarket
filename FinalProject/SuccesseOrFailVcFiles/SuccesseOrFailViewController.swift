@@ -8,10 +8,12 @@ class SuccesseOrFailViewController: UIViewController {
             getBackBt.setButtonDesign()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.isHidden = true
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         if isSucsses {
             self.textLb.text = "გადახდა წარმატებით შესრულდა"
@@ -19,17 +21,25 @@ class SuccesseOrFailViewController: UIViewController {
         } else {
             self.textLb.text = "სამწუხაროდ გადახდა ვერ მოხერდხა,\n სცადეთ თავიდან"
             self.okFailImg.image = UIImage(named: "error_icon")
-            
         }
     }
-    func navigate(navControler: UINavigationController, isSucsses: Bool){
-        self.modalPresentationStyle = .fullScreen
-        navControler.present(self, animated: true, completion: nil)
-        
-        self.isSucsses = isSucsses
-    }
+    
     @IBAction func getBackBtAction(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        if self.isSucsses {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarMakeVC") as! CarMakeVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
+    func navigate(navControler: UINavigationController, isSucsses: Bool){
+        if isSucsses {
+            navControler.pushViewController(self, animated: true)
+        } else {
+            navControler.present(self, animated: true, completion: nil)
+        }
+        self.isSucsses = isSucsses
+    }
 }

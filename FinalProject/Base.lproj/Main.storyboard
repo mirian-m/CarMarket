@@ -12,7 +12,7 @@
         <!--Registration View Contoller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegistrationViewContoller" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewContoller" id="BYZ-38-t0r" customClass="RegistrationViewContoller" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
         <!--Car MakeVC-->
         <scene sceneID="ICx-vc-rnp">
             <objects>
-                <viewController storyboardIdentifier="CarModelVC" automaticallyAdjustsScrollViewInsets="NO" id="zpe-e4-I88" customClass="CarMakeVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarMakeVC" automaticallyAdjustsScrollViewInsets="NO" id="zpe-e4-I88" customClass="CarMakeVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="5ud-5i-LhQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ba4-Dm-3fP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="108"/>
+            <point key="canvasLocation" x="2023" y="116"/>
         </scene>
         <!--Car Data View Controller-->
         <scene sceneID="3FI-Wd-IjB">
@@ -703,7 +703,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLA-nF-03C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="108"/>
+            <point key="canvasLocation" x="3397" y="116"/>
         </scene>
         <!--გადახდის გვერდი-->
         <scene sceneID="qdn-0h-tiU">
@@ -984,7 +984,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwA-NF-3cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4139.130434782609" y="107.14285714285714"/>
+            <point key="canvasLocation" x="4471" y="116"/>
         </scene>
         <!--Successe Or Fail View Controller-->
         <scene sceneID="wlO-RR-KjK">
@@ -1041,6 +1041,7 @@
                             <constraint firstItem="Sqg-mP-bqb" firstAttribute="centerX" secondItem="Ilr-m3-Tpd" secondAttribute="centerX" id="fer-KI-o53"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6Fb-pT-8fi"/>
                     <connections>
                         <outlet property="getBackBt" destination="Sqg-mP-bqb" id="3oI-4h-4FE"/>
                         <outlet property="okFailImg" destination="rXs-hx-TOO" id="m08-Rn-rXa"/>
@@ -1049,7 +1050,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTP-G4-jw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5051" y="108"/>
+            <point key="canvasLocation" x="5478" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1BC-0s-jZU">

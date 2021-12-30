@@ -4,6 +4,11 @@ class PaymentPageViewController: UIViewController {
     var carMakerStr: [String]!
     var dictionaryOfCars = [Int:[CarModel]]()
     var balanceAccount = Balance()
+    var comission: Int {
+        get {
+            return  (totalCost + 50) * 10 / 100
+        }
+    }
     var totalCost: Int {
         get {
             var sum = 0
@@ -28,13 +33,13 @@ class PaymentPageViewController: UIViewController {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var totalPriceLB: UILabel!{
         didSet {
-            totalPriceLB.text = "\(totalCost + 50)$"
+            let totalPrice = totalCost + 50
+            totalPriceLB.text = "\(totalPrice)$"
         }
     }
     @IBOutlet weak var comissionLb: UILabel! {
         didSet {
-            let comission = round(Double(totalCost) * 0.05)
-            comissionLb.text = "\(comission)$"
+            comissionLb.text = "\(self.comission)$"
         }
     }
     @IBOutlet weak var payBt: UIButton!{
@@ -47,7 +52,7 @@ class PaymentPageViewController: UIViewController {
             myBalanceLb.text = "\(balanceAccount.myBalance)"
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         carMakerStr = setCarMakerArr()
@@ -62,6 +67,6 @@ class PaymentPageViewController: UIViewController {
         super.viewWillDisappear(true)
         balanceAccount.myBalance = balanceAccount.setNewBalance(expense: totalCost)
         self.myBalanceLb.text = "\(balanceAccount.myBalance)"
-
+        
     }
 }

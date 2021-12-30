@@ -8,7 +8,7 @@ extension RegistrationViewContoller {
         if !isValidPassword(password: password.text) {
             passwordAlert()
         }
-        if  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarModelVC") as? CarMakeVC {
+        if  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarMakeVC") as? CarMakeVC {
             self.navigationController?.pushViewController(vc, animated: true)
             
         }
