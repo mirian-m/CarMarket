@@ -1,5 +1,24 @@
 import UIKit
 extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
+    func fillDictionaryOfCars() {
+        for index in 0 ..< carMakerStr.count {
+            dictionaryOfCars[index] = selectedCars.filter({$0.cars.make == carMakerStr[index]})
+        }
+    }
+    func setCarMakerArr()-> [String] {
+        var carMakeStr = [String]()
+        for item in selectedCars {
+            if !carMakeStr.contains(item.cars.make) {
+                carMakeStr.append(item.cars.make)
+            }
+        }
+        return carMakeStr
+    }
+    
+    @IBAction func topUpBalanceBtAction(_ sender: UIButton) {
+        balanceAccount.myBalance = balanceAccount.filUupBalance()
+        self.myBalanceLb.text = "\(balanceAccount.myBalance)"
+    }
     @IBAction func payBtAction(_ sender: UIButton) {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "SuccesseOrFailViewController") as?
             SuccesseOrFailViewController {
@@ -10,25 +29,7 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
             }
         }
     }
-    @IBAction func topUpBalanceBtAction(_ sender: UIButton) {
-        balanceAccount.myBalance = balanceAccount.filUupBalance()
-        self.myBalanceLb.text = "\(balanceAccount.myBalance)"
-    }
-    func fillDictionaryOfCars () {
-        for index in 0..<carMakerStr.count {
-            dictionaryOfCars[index] = selectedCars.filter({$0.cars.make == carMakerStr[index]})
-        }
-    }
-    func setCarMakerArr()-> [String] {
-        var k = [String]()
-        for item in selectedCars {
-            if !k.contains(item.cars.make) {
-                k.append(item.cars.make)
-            }
-        }
-        return k
-    }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selectedCars.filter({$0.cars.make == carMakerStr[section]}).count
     }
@@ -37,12 +38,11 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let hv = Bundle.main.loadNibNamed("HeaderView", owner: nil, options: nil)?.first as! HeaderView
+        let headerView = Bundle.main.loadNibNamed("HeaderView", owner: nil, options: nil)?.first as! HeaderView
         let logoUrl = ""
-        hv.carLogoImg.imgFromServerURL(urlString: logoUrl.urlStringGenerator(str: carMakerStr[section]))
-        hv.carMakerNameLb.text = carMakerStr[section].capitalizingFirstLetter()
-        
-        return hv
+        headerView.carLogoImg.imgFromServerURL(urlString: logoUrl.urlStringGenerator(str: carMakerStr[section]))
+        headerView.carMakerNameLb.text = carMakerStr[section].capitalizingFirstLetter()
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -62,7 +62,7 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
         cell.totalCostLb.text = "სულ: \(currentCar.cars.price * currentCar.quantity)$"
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         90
     }
