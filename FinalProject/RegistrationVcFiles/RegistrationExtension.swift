@@ -10,7 +10,6 @@ extension RegistrationViewContoller {
         }
         if  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarMakeVC") as? CarMakeVC {
             self.navigationController?.pushViewController(vc, animated: true)
-            
         }
     }
     

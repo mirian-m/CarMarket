@@ -11,12 +11,9 @@ class CarDataViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.navigationController?.navigationBar.isHidden = false
-    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        self.navigationController?.navigationBar.isHidden = false
         self.title = selectedCarArray.first?.cars.make.capitalizingFirstLetter()
     }
 }

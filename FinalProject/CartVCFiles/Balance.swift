@@ -4,7 +4,7 @@ class Balance  {
     init() {
         myBalance = Int.random(in: 0...Int(UInt16.max))
     }
-    func filUupBalance() -> Int {
+    func fillUpBalance() -> Int {
         return Int.random(in: myBalance...Int(UInt32.max))
          
     }

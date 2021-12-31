@@ -16,7 +16,7 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     @IBAction func topUpBalanceBtAction(_ sender: UIButton) {
-        balanceAccount.myBalance = balanceAccount.filUupBalance()
+        balanceAccount.myBalance = balanceAccount.fillUpBalance()
         self.myBalanceLb.text = "\(balanceAccount.myBalance)"
     }
     @IBAction func payBtAction(_ sender: UIButton) {
