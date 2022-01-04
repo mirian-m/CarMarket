@@ -9,11 +9,10 @@ class CarDataViewController: UIViewController {
     @IBOutlet weak var carDataTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.isHidden = false
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        self.navigationController?.navigationBar.isHidden = false
         self.title = selectedCarArray.first?.cars.make.capitalizingFirstLetter()
     }
 }

@@ -25,9 +25,10 @@ class SuccesseOrFailViewController: UIViewController {
     }
     
     @IBAction func getBackBtAction(_ sender: UIButton) {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarMakeVC") as! CarMakeVC
-            self.navigationController?.pushViewController(vc, animated: true)
-            self.dismiss(animated: true, completion: nil)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CarMakeVC") as! CarMakeVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
     func navigate(navControler: UINavigationController, isSucsses: Bool){

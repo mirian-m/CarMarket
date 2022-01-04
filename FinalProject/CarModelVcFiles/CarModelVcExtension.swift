@@ -3,7 +3,7 @@ extension CarMakeVC :  UITableViewDelegate, UITableViewDataSource{
 
     @IBAction func moveToBag(_ sender: UIButton) {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentPageViewController") as? PaymentPageViewController {
-            vc.selectedCars = getItemsFromArrayByIdentifier(strIdentifier: nil, intIdentifier: 0)
+            vc.selectedCars = getItemsFromArrayByIdentifier(intIdentifier: 0)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

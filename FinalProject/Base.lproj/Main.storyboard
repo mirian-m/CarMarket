@@ -486,10 +486,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOI-2e-RIA">
-                                <rect key="frame" x="0.0" y="68" width="414" height="95"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU7-aS-rcK">
-                                        <rect key="frame" x="16" y="0.0" width="183" height="41"/>
+                                        <rect key="frame" x="16" y="5" width="183" height="41"/>
                                         <color key="backgroundColor" red="0.95999999999999996" green="0.95999999999999996" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="WZ5-NZ-0x2"/>
@@ -508,7 +508,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1av-ze-8qM">
-                                        <rect key="frame" x="215" y="0.0" width="183" height="41"/>
+                                        <rect key="frame" x="215" y="5" width="183" height="41"/>
                                         <color key="backgroundColor" red="0.95999999999999996" green="0.95999999999999996" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <state key="normal" title="ფასი კლებადობით">
@@ -524,7 +524,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks4-e7-99H">
-                                        <rect key="frame" x="16" y="54" width="183" height="41"/>
+                                        <rect key="frame" x="16" y="59" width="183" height="41"/>
                                         <color key="backgroundColor" red="0.95999999999999996" green="0.95999999999999996" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <state key="normal" title="A-z">
@@ -540,7 +540,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-Mq-qOk">
-                                        <rect key="frame" x="215" y="54" width="183" height="41"/>
+                                        <rect key="frame" x="215" y="59" width="183" height="41"/>
                                         <color key="backgroundColor" red="0.95999999999999996" green="0.95999999999999996" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <state key="normal" title="Z-a">
@@ -568,7 +568,7 @@
                                     <constraint firstItem="wU7-aS-rcK" firstAttribute="leading" secondItem="cOI-2e-RIA" secondAttribute="leading" constant="16" id="LJQ-D6-PCo"/>
                                     <constraint firstItem="1av-ze-8qM" firstAttribute="top" secondItem="wU7-aS-rcK" secondAttribute="top" id="ZPd-bb-Lgk"/>
                                     <constraint firstItem="nWM-Mq-qOk" firstAttribute="bottom" secondItem="ks4-e7-99H" secondAttribute="bottom" id="ay2-pl-hra"/>
-                                    <constraint firstItem="wU7-aS-rcK" firstAttribute="top" secondItem="cOI-2e-RIA" secondAttribute="top" id="imq-GK-jHp"/>
+                                    <constraint firstItem="wU7-aS-rcK" firstAttribute="top" secondItem="cOI-2e-RIA" secondAttribute="top" constant="5" id="imq-GK-jHp"/>
                                     <constraint firstItem="nWM-Mq-qOk" firstAttribute="trailing" secondItem="1av-ze-8qM" secondAttribute="trailing" id="j3H-nC-kem"/>
                                     <constraint firstItem="1av-ze-8qM" firstAttribute="height" secondItem="wU7-aS-rcK" secondAttribute="height" id="mZM-wb-XFU"/>
                                     <constraint firstItem="nWM-Mq-qOk" firstAttribute="width" secondItem="wU7-aS-rcK" secondAttribute="width" id="nEr-Gi-CoM"/>
@@ -578,7 +578,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wU9-vV-TFI">
-                                <rect key="frame" x="16" y="200" width="382" height="662"/>
+                                <rect key="frame" x="16" y="205" width="382" height="657"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarDataTableViewCell" rowHeight="150" id="noO-Re-SGx" customClass="CarDataTableViewCell" customModule="FinalProject" customModuleProvider="target">
