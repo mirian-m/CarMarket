@@ -1,9 +1,7 @@
 import UIKit
 
 class ChoosenMakeCarModelTableViewCell: UITableViewCell {
-
     @IBOutlet weak var choosenCarCell: UIView!
-    
     @IBOutlet weak var carImage: UIImageView!{
         didSet {
             carImage.setImgViewDesign()
@@ -17,7 +15,6 @@ class ChoosenMakeCarModelTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

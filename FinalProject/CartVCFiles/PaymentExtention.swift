@@ -14,7 +14,6 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
         }
         return carMakeStr
     }
-    
     @IBAction func topUpBalanceBtAction(_ sender: UIButton) {
         balanceAccount.myBalance = balanceAccount.fillUpBalance()
         self.myBalanceLb.text = "\(balanceAccount.myBalance)"
@@ -29,14 +28,12 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
             }
         }
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selectedCars.filter({$0.cars.make == carMakerStr[section]}).count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         carMakerStr.count
     }
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = Bundle.main.loadNibNamed("HeaderView", owner: nil, options: nil)?.first as! HeaderView
         let logoUrl = ""
@@ -44,11 +41,9 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
         headerView.carMakerNameLb.text = carMakerStr[section].capitalizingFirstLetter()
         return headerView
     }
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         50
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChoosenCarTableViewCell", for: indexPath) as! ChoosenMakeCarModelTableViewCell
         cell.selectionStyle = .none
@@ -62,7 +57,6 @@ extension PaymentPageViewController: UITableViewDelegate,UITableViewDataSource {
         cell.totalCostLb.text = "სულ: \(currentCar.cars.price * currentCar.quantity)$"
         return cell
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         90
     }

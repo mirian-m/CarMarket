@@ -29,7 +29,6 @@ class PaymentPageViewController: UIViewController {
             balaceIcon.setImgViewDesign()
         }
     }
-    
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var totalPriceLB: UILabel!{
         didSet {
@@ -52,18 +51,15 @@ class PaymentPageViewController: UIViewController {
             myBalanceLb.text = "\(balanceAccount.myBalance)"
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         carMakerStr = setCarMakerArr()
         fillDictionaryOfCars()
         self.navigationController?.navigationBar.isHidden = false
     }
-
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         balanceAccount.myBalance = balanceAccount.setNewBalance(expense: totalCost)
         self.myBalanceLb.text = "\(balanceAccount.myBalance)"
-        
     }
 }

@@ -1,24 +1,21 @@
 import UIKit
-extension CarDataViewController: UITableViewDelegate, UITableViewDataSource,CarDataViewControllerDelegate {
-    @IBAction func sortBnAction(_ sender: UIButton) {
+extension CarDataViewController: UITableViewDelegate, UITableViewDataSource,CarDataViewControllerDelegate{
+    @IBAction func sortBnAction(_ sender: UIButton){
         sortArrayBy(sender: sender)
-        setPressedBtnColor(sender: sender)
+        pressedBtn(sender: sender)
         carDataTableView.reloadData()
-        
     }
-    
-    func setPressedBtnColor(sender: UIButton) {
-        if pressedButton == nil {
-            pressedButton = sender
-            sender.setButtonDesign()
-        } else {
+    func pressedBtn(sender: UIButton){
+        clearBtnDesign(btn: pressedButton)
+        sender.setButtonDesign()
+        pressedButton = sender
+    }
+    func clearBtnDesign(btn: UIButton!){
+        if pressedButton != nil {
             pressedButton.backgroundColor = .init(red: 0.96, green: 0.96, blue: 0.98, alpha: 1)
             pressedButton.setTitleColor(.init(red: 0.14, green: 0.12, blue: 0.13, alpha: 1.0), for: .normal)
-            sender.setButtonDesign()
-            pressedButton = sender
         }
     }
-    
     func sortArrayBy(sender: UIButton){
         switch sender.tag {
         case 0:
@@ -33,15 +30,14 @@ extension CarDataViewController: UITableViewDelegate, UITableViewDataSource,CarD
             return
         }
     }
-
-    func removeCar(cell: CarDataTableViewCell) {
+    func removeCar(cell: CarDataTableViewCell){
         guard let index = self.carDataTableView.indexPath(for: cell) else {return}
         if  selectedCarArray[index.row].quantity > 0 {
             selectedCarArray[index.row].quantity -= 1
         }
         carDataTableView.reloadData()
     }
-    func addCar(cell: CarDataTableViewCell) {
+    func addCar(cell: CarDataTableViewCell){
         guard let index = self.carDataTableView.indexPath(for: cell) else {return}
         selectedCarArray[index.row].quantity += 1
         carDataTableView.reloadData()
@@ -60,7 +56,6 @@ extension CarDataViewController: UITableViewDelegate, UITableViewDataSource,CarD
         cell.delegate = self
         return cell
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         149
     }

@@ -21,7 +21,6 @@ extension UIButton {
         self.layer.cornerRadius = 10
         self.backgroundColor = UIColor(displayP3Red: 0.27, green: 0.65, blue: 1.0, alpha: 1.0)
         self.setTitleColor(.init(red: 0.97, green: 0.97, blue: 0.99, alpha: 1.0), for: .normal)
-        
     }
 }
 extension UIViewController {
@@ -30,7 +29,6 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -45,7 +43,6 @@ extension UIView {
 extension String {
     func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
-        
     }
     func lowercasedFirstLetter() -> String {
         return prefix(1).lowercased() + dropFirst()

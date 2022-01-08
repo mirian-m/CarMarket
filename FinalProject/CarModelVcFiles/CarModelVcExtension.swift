@@ -28,11 +28,9 @@ extension CarMakeVC :  UITableViewDelegate, UITableViewDataSource{
             carMake.insert(car.cars.make)
         }
     }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         carMake.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CarModelTableViewCell", for: indexPath) as! CarMakeTableViewCell
         cell.selectionStyle = .none
@@ -42,11 +40,9 @@ extension CarMakeVC :  UITableViewDelegate, UITableViewDataSource{
         cell.makeIconImg.imgFromServerURL(urlString: logoUrl.urlStringGenerator(str: carMake[indexOfSet]))
         return cell
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         70
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = tableView.indexPathForSelectedRow
         let currentCell = tableView.cellForRow(at: index!) as! CarMakeTableViewCell
@@ -56,7 +52,6 @@ extension CarMakeVC :  UITableViewDelegate, UITableViewDataSource{
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
     func getItemsFromArrayByIdentifier (strIdentifier: String? = nil, intIdentifier: Int = -1) -> [CarModel] {
         var tempArray = [CarModel]()
         for item in carsArray {
